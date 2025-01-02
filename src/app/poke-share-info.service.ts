@@ -17,5 +17,5 @@ export class PokeShareInfoService {
   public setValue(value: string) {
     this.stringVar.next(value);
   }
-  
+
 }
