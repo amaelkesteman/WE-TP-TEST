@@ -3,7 +3,7 @@ import { AppComponent } from './app.component';
 import { provideHttpClient } from '@angular/common/http';
 import { provideHttpClientTesting } from '@angular/common/http/testing';
 import { provideRouter } from '@angular/router';
-import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import {  HttpTestingController } from '@angular/common/http/testing';
 
 
 describe('AppComponent (Standalone)', () => {
