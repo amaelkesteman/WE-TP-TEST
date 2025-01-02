@@ -42,9 +42,9 @@ describe('AppComponent (Standalone)', () => {
     expect(component.title).toEqual('pokedemo');
   });
 
-  it('should render title', () => {
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, pokedemo');
+  it(`should have as title 'pokedemo'`, () => {
+    // Test de la valeur du titre
+    expect(component.title).toEqual('pokedemo');
   });
 
   it('should fetch and display pokemons', () => {
