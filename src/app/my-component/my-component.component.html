@@ -1,0 +1,22 @@
+<p>my-component works!</p>
+
+<input [(ngModel)]="id" type="text" [value]="selectedPokemon?.id">
+<input [(ngModel)]="search" type="text" [value]="selectedPokemon?.name">
+
+<select [(ngModel)]="selectedPokemon" test>
+
+    <option [value]="pokemon.name" *ngFor="let pokemon of pokemons | filterPokemonPipe:'name':search"
+        [ngValue]="pokemon">{{pokemon.name}}</option>
+
+</select>
+
+<button mat-raised-button (click)="handleClick(selectedPokemon)">Go</button>
+
+<BR>
+
+
+<div *ngIf="pokeDetails">
+    <app-poke-details [pokeDetails]="pokeDetails"> </app-poke-details>
+</div>
+
+<p-calendar [(ngModel)]="myDate" />
