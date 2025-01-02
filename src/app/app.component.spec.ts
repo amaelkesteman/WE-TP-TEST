@@ -16,7 +16,7 @@ describe('AppComponent (Standalone)', () => {
         // Providers nécessaires pour les tests
         provideHttpClient(),
         provideHttpClientTesting(),
-        provideRouter([]), // Vide ici, mais à personnaliser selon vos routes
+        provideRouter([]),
       ],
     }).compileComponents();
   });
